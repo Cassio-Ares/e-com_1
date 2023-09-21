@@ -1,0 +1,40 @@
+@use '../../sass/mixin' as *;
+
+.login_main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 5rem;
+
+        h1, h3{
+            line-height: 3rem;
+        }
+
+        .login_form{
+            display: flex;
+            flex-direction: column;
+            padding-top: 2rem;
+
+            label{
+                margin-top: 1rem;
+                margin-bottom: .3rem
+            }
+        }
+
+        input{
+          @include input;
+        }
+
+        .btn_login{
+            display: flex;
+            justify-content: center;
+            width: 524px;
+            height: 40px;
+            padding: 11px 13px;
+            margin-top: 1rem;
+            font-weight: bolder;
+            font-size: 1.2rem;
+        }
+
+        
+}

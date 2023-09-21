@@ -1,0 +1,10 @@
+@use '../sass/mixin' as *;
+.btn{
+  @include btn;
+
+  a{
+    text-decoration: none;
+    background: none;
+    color: aliceblue;
+  }
+}

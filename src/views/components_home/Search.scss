@@ -1,0 +1,37 @@
+@use '../../sass/mixin' as *;
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .search_form{
+        position: relative;
+        margin-top: 2rem;
+    }
+    
+    input{
+      @include input;
+      width: 63rem;
+      margin-right: -3rem; 
+      padding-left: 3.5rem;
+    }
+
+    button{
+        position: absolute;
+        border: none;
+        background: none;
+        top: 0.5rem;
+        left: 1rem;
+        cursor: pointer;
+    }
+
+    .user{
+        position: relative;
+        left: 6rem;
+        top:0.8rem;
+
+        img{
+            margin: 0 0.8rem;
+        }
+    }
+}

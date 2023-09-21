@@ -1,0 +1,22 @@
+.carrinho{
+    background: transparent;
+    display: flex;
+    align-items: center;
+    margin-left: 18rem;
+
+    p{
+       background: transparent;
+       font-weight: bold;
+    }
+
+    img{
+        width: 2rem;
+        height: 2rem;
+        position: relative;
+    }
+
+    img:hover{
+     width: 2.3rem;
+     height: 2.3rem;
+    }
+}

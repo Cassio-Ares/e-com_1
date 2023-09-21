@@ -1,0 +1,29 @@
+@use './variables' as *;
+
+@mixin header {
+  background: $background_header;
+  box-shadow: 2px 4px 4px 0px rgba(173, 173, 173, 0.25);
+}
+
+@mixin btn {
+  border-radius: 6px;
+  background: #0c70f2;
+  color: aliceblue;
+
+  :hover {
+    background: #c1cedf;
+  }
+}
+
+@mixin input{
+  display: flex;
+  width: 524px;
+  height: 40px;
+  padding: 11px 13px;
+  align-items: center;
+
+  border-radius: 10px;
+  border: 2px solid #7a7a7a;
+  background: rgba(255, 255, 255, 0.9);
+}
+
