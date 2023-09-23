@@ -1,0 +1,31 @@
+.descriptionDetails{
+    display: flex;
+
+    
+
+ .details_left{
+   margin-top: 3rem;
+   margin-left: 15rem;
+  
+ }
+
+ .details_img h3{
+    margin-left: 6rem;
+    margin-bottom: 1rem ;
+ }
+  
+
+ .details_img img{
+    width: 30rem;
+    margin-bottom: .5rem;
+ }
+
+ .details_title{
+    line-height: 2rem;
+ }
+
+.details_right{
+    margin: 2.5rem;
+    line-height: 2rem;
+}
+}

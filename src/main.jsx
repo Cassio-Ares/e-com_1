@@ -15,23 +15,22 @@ import "./index.scss";
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <Login/>,
-    // element: <Home data={PRODUCTS_MOCK}/>,
-    element: <Details Home data={PRODUCTS_MOCK}/>,
+    element: <Login/>,
+    
   },
+   {
+     path: "/home",
+     element: <Home data={PRODUCTS_MOCK}/>,
+   },
+
   {
-    path: "home",
-    // element: <Home/>,
+    path: "/details/:ItemId",
+    element: <Details data={PRODUCTS_MOCK}/>,
   },
 
   {
-    path: "details",
-    // element: <Details Home data={PRODUCTS_MOCK}/>,
-  },
-
-  {
-    path: "EnvioPedido",
-    //  element: <EnvioPedido Home data={PRODUCTS_MOCK}/>,
+    path: "/EnvioPedido/:id",
+    //element: <Pay data={PRODUCTS_MOCK}/>,
   },
 ]);
 

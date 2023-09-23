@@ -8,7 +8,7 @@
   border-radius: .5rem;
   margin: 4rem;
   
-
+ 
 
   h4 {
     line-height: 3rem;
@@ -24,4 +24,5 @@
 .cardProduct:hover{
   border: 1px solid #00000099;
   box-shadow: 5px 5px #00000099;
+  transform: scale(1.5, 1.5);
 }

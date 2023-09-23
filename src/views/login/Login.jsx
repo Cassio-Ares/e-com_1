@@ -1,6 +1,7 @@
 import './Login.scss'
 import Header from '../../assets/Header';
 import Button from '../../assets/Button';
+import { Link } from "react-router-dom";
 
 
 const Login = () => {
@@ -20,7 +21,9 @@ const Login = () => {
           />
           <label htmlFor="">Digite sua senha</label>
           <input type="password" name="senha" placeholder="***************" />
+          <Link to={"/home"}>
           <Button text='Entrar' customClass= 'btn_login' />
+          </Link>
         </form>
       </main>
     </>
