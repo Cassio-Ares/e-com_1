@@ -14,7 +14,7 @@ const Details = ({ data }) => {
       
  const showItem = data.find((product)=> product.id == ItemId)
 
- 
+ //console.log(showItem)
 
   return (
     <>
