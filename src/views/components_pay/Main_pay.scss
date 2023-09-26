@@ -1,0 +1,65 @@
+@use "../../sass/mixin" as *;
+.pay {
+  display: flex;
+
+  .payDado {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .payDado_form {
+    margin: 3rem 5rem;
+  }
+
+  .payDado_form input {
+    @include input;
+    margin-bottom: 1rem;
+  }
+
+  .payDados_checkbox {
+    margin: 0 5rem;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      line-height: 3rem;
+    }
+
+    label {
+      font-size: 1.3rem;
+    }
+
+    input[type="checkBox"] {
+      width: 1.5rem;
+      height: 1.5rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .pedido {
+    display: flex;
+    margin: 0 auto;
+    position: relative;
+    top: 4.5rem;
+    right: 3rem;
+    border: 1px solid #7A7A7A;
+    border-radius: .5rem;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 25rem;
+    height: 10rem;
+    padding: .5rem 1rem;
+    line-height: 3rem;
+
+    p:first-of-type{
+        border-bottom: 1px solid #7A7A7A;
+     }
+
+     .span{
+        margin-right: 10rem;
+     }
+
+     .span2{
+        margin-right: 13rem;
+     }
+  }
+}

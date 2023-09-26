@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from './views/login/Login'
 import Home from "./views/home/Home";
 import Details from "./views/details_compra/Details";
+import Pay from "./views/pay/Pay";
 
 //mock(simulação de BD)
 import {PRODUCTS_MOCK} from './mock/products.mock'
@@ -29,8 +30,8 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "/EnvioPedido/:id",
-    //element: <Pay data={PRODUCTS_MOCK}/>,
+    path: "/envioPedido/:ItemId",
+    element: <Pay data={PRODUCTS_MOCK}/>,
   },
 ]);
 

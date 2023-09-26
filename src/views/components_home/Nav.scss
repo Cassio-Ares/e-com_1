@@ -9,12 +9,19 @@
             background: transparent;
             padding: 0 2rem;
             margin-top: 3rem;
-            margin-left: 3rem;
+            margin-left: 1.5rem;
             font-size: 1.4rem;
         }    
 
         li:hover{
             color:  #0c70f2; 
-            cursor: pointer;        
+                 
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+            background: none;
+            cursor: pointer;  
         }
 }

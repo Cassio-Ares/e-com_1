@@ -2,6 +2,7 @@ import "./DescriptionDetails.scss";
 import Button from "../../assets/Button";
 import { Link } from "react-router-dom";
 
+
 const DescriptionDetails = ({ data }) => {
   console.log(data);
 
@@ -17,19 +18,18 @@ const DescriptionDetails = ({ data }) => {
           <h2>Descrição</h2>
           <p>{data.title}</p>
 
-          <Link to={"/home"}>
-            <Button text="Voltar para Home" />
-          </Link>
+          
         </div>
       </div>
 
       <div className="details_right">
         <h3>Informações Sobre o Produto</h3>
 
-        <p>
+        <p className="price_size">
           <strong>{data.price}</strong>
         </p>
-
+     
+     <div className="colors">
         <p>
           Cor:{"  "}
           {data.colors.length === 1
@@ -44,40 +44,48 @@ const DescriptionDetails = ({ data }) => {
                 )
               )}
         </p>
-          
-        <div style={{display: 'flex'}}>
+
+        <div style={{ display: "flex" }} >
           {data.colors.map((color, index) => (
-            <div key={index}
+            <div
+              key={index}
               style={{
-                width: '2rem',
-                height: '2rem',
-                marginLeft: '.5rem',
-                borderRadius: '10px',
+                width: "2rem",
+                height: "2rem",
+                marginLeft: ".5rem",
+                borderRadius: "10px",
                 backgroundColor: color,
-                border: '1px solid #7a7a7a',
+                border: "1px solid #7a7a7a",
               }}
             ></div>
           ))}
         </div>
+        </div>
 
-        <p>Tamanho</p>
-        <div>
-        {data.sizes.map((size, index)=>(
-           <span key={index}
-           style={{
-             borderRadius: '10px',
-             border: '1px solid #7a7a7a',
-             padding:'.5rem',
-             textTransform: 'uppercase',
-             textAlign: "center",
-             marginLeft: '.5rem',
-           }}
-         >
-           {size}
-         </span>
-        ))}
-      </div>
-        <Button text="Finalizar Compra" />
+        <div className="sizes" >
+     
+          <p>Tamanho</p>
+          <div>
+            {data.sizes.map((size, index) => (
+              <span
+                key={index}
+                style={{
+                  borderRadius: "10px",
+                  border: "1px solid #7a7a7a",
+                  padding: ".5rem",
+                  textTransform: "uppercase",
+                  textAlign: "center",
+                  marginLeft: ".5rem",
+                }}
+              >
+                {size}
+              </span>
+            ))}
+          </div>
+        </div>
+      <Link to={`/envioPedido/${data.id}`}>
+        <Button text="Finalizar Compra" customClass='btn_finalizar_compra' />
+      </Link>
       </div>
     </div>
   );

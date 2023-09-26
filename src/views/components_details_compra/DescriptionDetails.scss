@@ -6,17 +6,18 @@
  .details_left{
    margin-top: 3rem;
    margin-left: 15rem;
+   margin-right: 2rem;
   
  }
 
  .details_img h3{
-    margin-left: 6rem;
+    align-self: center;
     margin-bottom: 1rem ;
  }
   
 
  .details_img img{
-    width: 30rem;
+    width: 20rem;
     margin-bottom: .5rem;
  }
 
@@ -28,4 +29,35 @@
     margin: 2.5rem;
     line-height: 2rem;
 }
+
+.price_size{
+   font-size: 1.5rem;
+}
+
+.colors{
+   margin-top: 1.5rem ;
+   margin-bottom: 1.5rem ;
+}
+
+.sizes{
+   margin-bottom: 1.5rem ;
+}
+
+
+.btn_finalizar_compra{
+   display: flex;
+   justify-content: center;
+   width: 524px;
+   height: 40px;
+   padding: 11px 13px;
+   margin-top: 1rem;
+   font-weight: bolder;
+   font-size: 1.2rem;
+   margin-top: 6rem;    
+}
+  a{
+      text-decoration: none;
+     }
+
+
 }
